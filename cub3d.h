@@ -1,7 +1,7 @@
 #ifndef CUB3D_H
 #define CUB3D_H
 #include <stdio.h>
-#include "./macos/mlx.h"
+#include "./minilibx-linux/mlx.h"
 #include "./libft/libft.h"
 #include "get_next_line.h"
 #include <math.h>
@@ -36,13 +36,14 @@ struct s_data
 	int height;
 	int count;
 	int nb;
+	int to_map;
 	double cam_x;
 	double cam_y;
 	double dir_x;
 	double dir_y;
 	double pos_x;
 	double pos_y;
-	t_img	img;
+	t_img	imgg;
 	void	*mlx_ptr;
 	void	*win_ptr;
 };
@@ -75,4 +76,11 @@ int first_color(char *line, int fd, t_data *data);
 int parce_map(int fd, char *line, t_data* data);
 int can_be(char ch);
 int direction(char ch);
+void	to_int(t_data *data);
+void	fill(char *line, int *z_map);
+int	get_max_widht(char *file_name);
+int	get_height(char **);
+void	*mlx_xpm_file_to_image(void *mlx_ptr, char *filename,
+			       int *width, int *height);
+				   
 #endif

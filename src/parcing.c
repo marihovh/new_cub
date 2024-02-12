@@ -79,6 +79,7 @@ int parce_map(int fd, char *line, t_data* data)
 	data->map_c[i] = NULL;
 	if (check_map(data))
 		return (errorik(M_ERROR));
+	to_int(data);
 	return (0);
 }
 

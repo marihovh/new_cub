@@ -1,5 +1,5 @@
 NAME=cub3d
-SRC = src/main.c src/parcing.c ./get_next_line.c ./get_next_line_utils.c src/parc_utils.c src/utils.c src/textures.c src/colors.c src/utils_1.c src/window.c
+SRC = src/main.c src/parcing.c ./get_next_line.c ./get_next_line_utils.c src/parc_utils.c src/utils.c src/textures.c src/colors.c src/utils_1.c src/window.c src/to_int.c
 HEADER=philo.h
 OBJ=$(SRC:src/%.c=obj/%.o)
 CC=cc

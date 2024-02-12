@@ -6,7 +6,7 @@
 /*   By: marihovh <marihovh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 19:27:26 by marihovh          #+#    #+#             */
-/*   Updated: 2024/01/24 15:29:20 by marihovh         ###   ########.fr       */
+/*   Updated: 2024/02/10 18:01:37 by marihovh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ int	main(int argc, char **argv)
 	data->textures[3] = NULL;
 	data->count = 0;
 	data->nb = 0;
+	data->to_map = 0;
 	if (argc == 2)
 	{
 		if (parcing(data, argv))
